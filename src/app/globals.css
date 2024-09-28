@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: rgba(255, 255, 255, 0.05);
+	--btn-bg: rgba(128, 128, 128, 0.15);
+	--btn_hover: rgba(128, 128, 128, 0.282);
+	--text: white;
+	--text-secondary: #717171;
+
+	--slider-bg: rgba(170, 170, 170, 0.25);
+	--slider-track: rgba(255, 255, 255, 0.73);
+	--slider-track_hover: white;
+	--loader: white;
+	--loader_bg: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: rgba(0, 0, 0, 0.1);
+		--btn-bg: rgba(128, 128, 128, 0.15);
+		--btn_hover: rgba(128, 128, 128, 0.282);
+		--text: white;
+		--text-secondary: #717171;
+
+		--slider-bg: rgba(170, 170, 170, 0.25);
+		--slider-track: rgba(255, 255, 255, 0.73);
+		--slider-track_hover: white;
+
+		--loader: white;
+		--loader_bg: none;
+	}
+}
+
+body {
+	background: url(../../public/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	margin: 0;
+	height: 100vh;
+}
+
+.icon {
+	stroke: var(--text);
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
