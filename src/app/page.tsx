@@ -27,7 +27,7 @@ const socialLinks = [
 		label: "Youtube",
 	},
 	{
-		href: "t.me/espilx_mus",
+		href: "https://t.me/espilx_mus",
 		icon: TelegramIcon,
 		label: "Telegram",
 	},
